@@ -53,10 +53,22 @@
 
       <div class="row">
 
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-9 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
+
+            <h3 class="header-bullets">
+              <li>Hand-made paintings of your favorite photos
+              <li>All works are created by French artist Amélie Olivier</li>
+              <li>Personalized service. Real dialogue with a painter you <em>know</em></li>
+              <li>Reasonably priced, environmentally conscious service</li>
+              <li>5% of proceeds are donated to environmental non-profit causes</li>
+            </h3>
+<!-- 
+            <h3 class="blog-post-title">
+            </h3>
+ -->
+
             <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
             <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
@@ -121,27 +133,15 @@
 
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="col-sm-2 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <h4>About</h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.</p>
           </div>
           <div class="sidebar-module">
             <h4>Archives</h4>
             <ol class="list-unstyled">
               <li><a href="#">January 2014</a></li>
-              <li><a href="#">December 2013</a></li>
-              <li><a href="#">November 2013</a></li>
-              <li><a href="#">October 2013</a></li>
-              <li><a href="#">September 2013</a></li>
-              <li><a href="#">August 2013</a></li>
-              <li><a href="#">July 2013</a></li>
-              <li><a href="#">June 2013</a></li>
-              <li><a href="#">May 2013</a></li>
-              <li><a href="#">April 2013</a></li>
-              <li><a href="#">March 2013</a></li>
-              <li><a href="#">February 2013</a></li>
-            </ol>
           </div>
           <div class="sidebar-module">
             <h4>Elsewhere</h4>

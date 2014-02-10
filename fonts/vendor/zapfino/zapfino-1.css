@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'zapfino';
+	src: url('LinotypeZapfino-One.eot?') format('eot'), 
+	     url('LinotypeZapfino-One.woff') format('woff'), 
+	     url('LinotypeZapfino-One.ttf')  format('truetype'),
+	     url('LinotypeZapfino-One.svg#LinotypeZapfino-One') format('svg');
+}

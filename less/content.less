@@ -1,0 +1,48 @@
+body {
+    font-family: @font-family;
+    color: @text;
+    background-color: @background;
+}
+
+a {
+    color:@link-primary;
+    
+    &:hover{
+        color:@link-secondary;
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top:10px;
+    font-weight: 600;
+    font-family: @font-family;
+}
+
+h1 {
+    font-size: 24px;
+    line-height:32px;
+}
+
+h2, h3  {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+h4, h5, h6 {
+    font-size: 14px
+}
+
+hr {
+    border-top-color:@horizontal-line;
+}
+
+.glyphicons i:before {
+    color:@icon;
+}
+
+
+//Fix for Bootstrap .table width:100% 
+.glyphicons.table {
+    width:0px;
+}

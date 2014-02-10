@@ -1,0 +1,41 @@
+.faq {
+    .question {
+        padding-top:13px;
+        padding-bottom:13px;
+        border-top:1px solid @horizontal-line;
+
+        .faq-toggle {
+            font-size:14px;
+            font-weight:600;
+            color:@text;
+
+            &:focus, &:hover {
+                outline:none;
+                text-decoration:none;
+            }
+
+            &:before {
+                margin-right:17px;
+                font-size:20px;
+                font-weight:700;
+                position:relative;
+                content:"+"; 
+                bottom:-2px;
+            }
+
+            &.open {
+                &:before {
+                    content:"−"; 
+                }
+            }
+        }
+
+        .answer {
+            padding-top:15px;
+        }
+        
+        &:first-child {
+            border-top:none;
+        }
+    }
+}

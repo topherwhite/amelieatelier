@@ -1,0 +1,168 @@
+@comparison-border: 1px @horizontal-line solid;
+@comparison-border-radius: 3px;
+
+// This is somewhat derived from .pricing-plan. See pricing-tables.less as well.
+.product-comparison {
+    margin-top:60px;
+    margin-bottom:60px;
+
+    .captions, .data {
+        ul {
+            padding:0;
+            list-style: none;            
+            
+            li {
+                border-top:@comparison-border;
+                overflow:hidden;
+                &:first-child {
+                    border-top:none;
+                }
+                height:64px;
+            }
+        }
+        @media @small-and-smaller {
+            margin-bottom:30px;
+        }
+    }
+    @media @small-and-smaller {
+        margin-bottom:30px;
+    }
+
+
+
+    .captions{
+        text-align: left;
+
+        margin-top:113px;
+        padding-right:0;
+
+        ul {
+            border:@comparison-border;
+            border-right:none;
+            .border-left-radius(@comparison-border-radius);
+            li {
+                padding:20px 14px;
+            }
+        }
+    }
+
+    .data {
+        padding-right:0;
+        padding-left:0;
+        
+        ul {
+            border-top:@comparison-border;
+            border-bottom:@comparison-border;
+            li {
+                padding-left:15px;
+                padding-right:15px;
+                span {
+                    background-color:@comparison-data-bg;
+                    padding:21px 14px;
+                    display:block;
+                    height:64px;
+                    font-weight:600;
+                    .glyphicons {
+                        padding:6px 0 11px 21px;
+
+                        i:before {
+                            color:@text;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media @small-and-smaller {
+            padding-right:15px;
+
+            ul {
+                border-right:@comparison-border;
+                .border-bottom-right-radius(@comparison-border-radius);
+                li {
+                    padding-right:0;
+                    &:last-child {
+                        span {
+                            .border-bottom-right-radius(@comparison-border-radius);
+                        }
+                    }                    
+                }
+
+            }
+        }
+
+        &.last {
+            padding-right:15px;
+
+            ul {
+                border-right:@comparison-border;
+                
+                li {
+                    padding-right:0;
+
+                    &:last-child {
+                        span {
+                            
+                            .border-bottom-right-radius(@comparison-border-radius);
+                        }
+                    }
+                }
+                .border-bottom-right-radius(@comparison-border-radius);
+            }
+
+            .header {
+                padding-right:0px;
+            }
+        }
+
+        &.highlighted {
+            ul {
+                li{
+                    span{
+                        background-color: @comparison-data-highlight-bg;
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        padding-left:15px;
+        padding-right:15px;
+        .head {
+            display:block;
+            border-left:1px solid transparent;
+
+            &.height-fix {
+                height:113px;                    
+            }
+
+            &.two-liner {
+                padding-top: 27px;
+                line-height:30px;
+            }
+
+        }
+
+        @media @small-and-smaller {
+            padding-right:0px;
+        }
+    }
+
+
+    .disclaimer {
+        text-align: left;
+        padding:15px;
+        
+        .glyphicons {
+            float:left;
+            margin-top:5px;
+        }
+        .text {
+            margin-left:40px;
+        }
+
+    }
+    
+
+}

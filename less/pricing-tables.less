@@ -1,0 +1,115 @@
+// Both elements use the same head
+.pricing-plan, .product-comparison {
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align: center;
+
+    .head {
+        font-size: 24px;
+        font-weight:bold;
+        padding-top:45px;
+        padding-bottom:45px;
+        background-color:@pricing-one-gradient-start;
+        background-image: linear-gradient(to bottom, @pricing-one-gradient-start, @pricing-one-gradient-end);
+        color:@pricing-one-text;
+        position:relative;
+        .border-top-right-radius(2px);
+        .border-top-left-radius(2px);
+        .box-shadow(~"0 1px 1px -1px @gradient-one-shadow");    
+
+        &.alternative {
+            background-color: @pricing-two-gradient-start;
+            background-image: linear-gradient(to bottom, @pricing-two-gradient-start, @pricing-two-gradient-end);
+            color:@pricing-two-text;
+            .box-shadow(~"0 1px 1px -1px @pricing-head-shadow");   
+
+            & .ribbon {
+                background-color: @pricing-ribbon-two-gradient-start;
+                background-image: linear-gradient(to bottom, @pricing-ribbon-two-gradient-start, @pricing-ribbon-two-gradient-end);
+                color:@pricing-ribbon-two-text;
+
+                &:after {
+                    border-color: transparent @gradient-two-start transparent transparent;
+                }
+
+                &:before {
+                    border-color: @text @text transparent transparent;    
+                }
+            }
+        }
+
+        .ribbon {
+            position:absolute;
+            height: 25px;
+            background-color: @pricing-ribbon-one-gradient-start;
+            background-image: linear-gradient(to bottom, @pricing-ribbon-one-gradient-start, @pricing-ribbon-one-gradient-end);
+            font-size: 14px;
+            color:@pricing-ribbon-one-text;
+            letter-spacing: 1px;
+            padding: 0 27px 0 10px;
+            top:12px;
+            left:-5px;
+            line-height:23px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top:0;
+                right: 0;
+                border-width: 13px 10px;
+                border-style: solid;
+                border-color: transparent @pricing-one-gradient-start transparent transparent;
+                display: block;
+                width: 0;
+            }                
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom:-4px;
+                left: 0px;
+                border-width: 2px 3px;
+                border-style: solid;
+                border-color: @pricing-ribbon-minitriangle @pricing-ribbon-minitriangle transparent transparent;
+                display: block;
+                width: 0;
+            }  
+        }
+    }
+}
+
+.pricing-plan {
+    ul.details {
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        border:0 solid @horizontal-line;
+        border-width: 1px 1px 0 0;
+
+        li {
+            border:0 solid @horizontal-line;
+            border-width: 0 0 1px 1px;
+            border-collapse: collapse;
+            height:45px;
+            line-height: 45px;
+
+            &.price {
+                font-size:30px;
+                font-weight:bold;
+                height:65px;
+                line-height: 65px;
+                background-image: linear-gradient(to bottom, @price-gradient-start, @price-gradient-end);
+
+                .small {
+                    font-size:12px;
+                }
+            }
+
+            &.buy {
+                height:100px;
+                line-height: 100px;
+
+            }
+        }
+    }
+}

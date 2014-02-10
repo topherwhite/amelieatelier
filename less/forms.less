@@ -1,0 +1,20 @@
+.form-control {
+  .border-radius(2px);
+  font-size: 17px;
+  font-weight:normal;
+  // font-family: @font-family;
+   &:focus {
+      border-color: @form-focus-border;
+      outline: 0;
+      outline: none;
+     .box-shadow(~"inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px @form-focus-border");
+   }
+}
+
+label {
+  font-weight:normal;
+}
+
+.form-group {
+  margin-bottom:11px;
+}

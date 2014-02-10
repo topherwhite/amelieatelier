@@ -1,0 +1,104 @@
+.row.feature-box {
+    margin-top:100px;
+    margin-bottom:90px;
+
+    @media @smaller {
+        margin-top:40px;
+        margin-bottom:30px;
+    }
+}
+
+.feature {
+    margin-top:34px;
+    margin-bottom:34px;
+
+    h3 {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 600;
+        margin:0 0 10px 0;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        border:1px @icon-box-line solid;
+        float:left;
+        .border-radius(2px);
+
+        .glyphicons i:before {
+            font-size:26px;
+            left: 14px;
+            top:  5px;
+        }
+    }
+
+    .text {
+        margin-left:70px;
+    }
+
+    .glyphicons i:before {
+        font-size:23px;
+        left: 3px;
+        top: -9px;
+        margin-left:-3px;
+        float:left;   
+    }
+
+    &:hover {
+        .glyphicons i:before{
+            // color:@icon-hover;            
+        }
+    }
+}
+
+.large-features {
+    border-top:1px @horizontal-line solid;
+
+    .feature{
+        border-bottom:1px @horizontal-line solid;
+        margin: 30px 0 30px 0;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+
+            &.with-icon {
+                margin:0 0 15px 25px;
+            }
+        }
+
+        div.description {
+            margin-top:30px;
+
+            &.special-margin {
+                margin-top: 55px;
+            }
+
+            @media @smaller {
+                margin-top:55px;
+                margin-bottom:55px;
+            }
+        }
+
+        div.image {
+            text-align: center;
+            
+            img {
+                display:inline-block;
+            }
+
+            @media @smaller {
+                margin-top:20px;
+            }
+        }
+    }
+
+
+    .glyphicons i:before {
+        font-size:38px;
+        left: 3px;
+        top: -20px;
+        margin-left:-25px;
+    }
+}

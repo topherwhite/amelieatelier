@@ -1,0 +1,59 @@
+#map-canvas {
+    margin: 0;
+    padding: 0;
+    height: 480px;
+    img {
+      max-width: none;
+    }
+}
+
+#contact-form {
+    button{
+        float:right;
+        margin:10px 0 0 0;
+    }
+} 
+
+#contact-details {
+    
+    &.with-margin{
+        margin-top:56px;
+    }
+
+    .detail-block {
+        margin-bottom:26px;
+
+        h3 {
+            margin-bottom:12px;
+        }
+    }
+
+    .info-block {
+        margin-bottom:30px;
+
+        .glyphicons {
+            float:left;
+        }
+        
+        .glyphicons i:before {
+            top:5px;
+            left:5px;
+            color:@icon-contact;
+        }
+
+        .info {
+            margin-left:50px;
+
+            h5 {
+                margin-bottom: 0;
+                font-weight:600;
+            }
+
+            &.business-hours {
+                p {
+                    margin:0;
+                }
+            }
+        }
+    }
+}

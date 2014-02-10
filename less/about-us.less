@@ -1,0 +1,54 @@
+.progress.grove-progress {
+    background-image:none;
+    background-color:@progress-bar-background;
+    .box-shadow(none);
+    .border-radius(0);
+
+    .progress-bar {
+        font-size: 12px;
+        background-image:none;
+        background-color:@progress-bar;
+        .box-shadow(none);
+        .box-sizing(border-box);
+        .transition(width .6s ease);
+        filter:none;
+    }
+}
+
+.our-skills {
+    .grove-progress {
+        margin-bottom:12px;
+    }
+}
+
+// Bar of progress
+
+.team-member {
+    @media @smaller {
+        margin-bottom:30px;
+    }
+
+    .description {
+        padding:5px 20px;
+        background-color: @team-member-background;
+    }
+
+    .social {
+        .glyphicons { 
+            height:36px; 
+            margin:5px 7px 0 0;
+
+            i:before {
+                font-size:35px;
+                color:@team-member-icon;
+            }
+
+            &:hover {
+                i:before {
+                    color:@team-member-icon-hover;
+                }
+            }
+
+        }
+    }
+}

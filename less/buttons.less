@@ -1,0 +1,126 @@
+.btn-grove-common {
+    border:none;
+    .box-shadow(none);
+    .border-radius(3px);
+}
+
+.btn-grove-one {
+    .button-variant(@gradient-one-text; @gradient-one-start; @gradient-one-start);
+    .btn-styles(@gradient-one-start);
+
+    .btn-grove-common;
+
+    .caret {
+        border-top-color: @gradient-one-text;    
+    }
+
+    .glyphicons i:before {
+        color:@gradient-one-text;
+    }
+}
+
+.btn-grove-two {
+    .button-variant(@gradient-two-text; @gradient-two-start; @gradient-two-start);
+    .btn-styles(@gradient-two-start);
+
+    .btn-grove-common;
+
+    .caret {
+        border-top-color: @gradient-two-text;    
+    }
+
+    .glyphicons i:before {
+        color:@gradient-two-text;
+    }
+}
+
+.btn-grove-three {
+    .button-variant(@gradient-one-text; @button-three-background; @button-three-background);
+
+    .btn-grove-common;
+
+    .caret {
+        border-top-color: @gradient-one-text;    
+    }
+
+    .glyphicons i:before {
+        color:@gradient-one-text;
+    }
+}
+
+.btn {
+    .glyphicons {
+        padding-left:25px;
+
+        i:before {
+            font-size:19px;
+            top:-6px;
+        }
+    }
+}
+
+.btn-xs {
+    .glyphicons {
+        padding-left:15px;
+    
+        i:before {
+            font-size:13px;
+            top:-2px;      
+        }
+    }
+}
+
+.btn-sm {
+    .glyphicons {
+        padding-left:23px;
+
+        i:before {
+            font-size:18px;
+            top:-4px;
+        }
+    }
+}
+
+.btn-lg {
+    font-size: 14px;
+    .glyphicons {
+        padding-left:26px;
+
+        i:before {
+            font-size:23px;
+            top:-8px;
+        }
+    }
+}
+
+
+.btn-xlg {
+    .button-size(@padding-vertical: 18px, 
+               @padding-horizontal:22px,
+               @font-size:15px,
+               @line-height:normal,
+               @border-radius:3px);
+
+    letter-spacing:2px;
+    .glyphicons {
+        padding-left:23px;
+
+        i:before {
+            font-size:24px;
+            top:-9px;        
+        }
+    }
+}
+
+.btn-bold {
+    font-weight: 600;
+    text-transform: uppercase;    
+}
+
+.btn-group {
+    .dropdown-menu.grove-dropdown {
+        background-color: @dropdown-background-stronger-legacy;
+        background-color: @dropdown-background-stronger;
+        margin-top:-1px;
+    }
+}
